@@ -32,7 +32,6 @@ import { ref, onMounted, defineComponent, computed } from "vue";
 export default defineComponent({
   name: "ListingTable",
   components: {},
-  props: {},
   emits: [],
   setup() {
     const listingTable = ref<HTMLElement | null>(null);

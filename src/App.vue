@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
-import StockDataList from "./components/StockDataList.vue";
+import WindowPortal from "./components/WindowPortal.vue";
+// import StockDataList from "./components/StockDataList.vue";
 import ListingTable from "./components/ListingTable.vue";
 import { onMounted, ref } from "vue";
 const isWindowOpen = ref(false);
@@ -15,7 +15,7 @@ onMounted(() => {
 <template>
   <!-- <StockDataList></StockDataList> -->
   <div ref="test" class="parent">
-    <HelloWorld v-model:open="isWindowOpen" @update:open="" :show-icon="true">
+    <WindowPortal v-model:open="isWindowOpen" @update:open="" :show-icon="true">
       <!-- <div ref="myDiv">
         <div class="header">Header</div>
         <div class="counter">{{ counter }}</div>
